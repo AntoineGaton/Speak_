@@ -1,0 +1,27 @@
+const mathOperations = require('./calculator');
+
+describe("Calculator tests", () => {
+    test('adding 1 + 2 should return 3', () => {
+        // arrange and act
+        var result = mathOperations.sum(1, 2)
+
+        // assert
+        expect(result).toBe(3);
+    });
+
+    test("subtracting 2 from 3 should return 1", () => {
+        // arrange and act
+        var result = mathOperations.diff(3, 2)
+
+        // assert
+        expect(result).toBe(1);
+    });
+
+    test("multiplying 2 and 3 should return 6", () => {
+        // arrange and act
+        var result = mathOperations.product(2, 3)
+
+        // assert
+        expect(result).toBe(6);
+    });
+})
